@@ -17,7 +17,7 @@ define([
         template: JST['app/scripts/templates/fetchuser.ejs'],
         fetch: function (e) {
         	e.preventDefault();
-        	var self = this;
+        	var _this = this;
         	// Hook up to username input field and remove all empty white space
         	var usernameInput = this.$el.find('#ll-github-username-input').val().replace(/\s/g, '');
             // Set urlRoot
@@ -25,7 +25,7 @@ define([
             // Fetch model attributes
         	this.model.fetch({
         		success: function (model, response, options) {
-        			self.userInfo();
+        			_this.userInfo();
         		}
         	});
         },

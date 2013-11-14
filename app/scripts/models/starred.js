@@ -13,7 +13,7 @@ define([
     		languageMap: {}
     	},
         mode: function(array) {
-        	var self = this;
+        	var _this = this;
 
         	// If the languages array is empty, return false
 		    if(array.length === 0) {
@@ -44,8 +44,8 @@ define([
 		    		maxCount = languageMap[language];
 		    	}
 		    	// Save the languageMap and modeLanguage as an attribute of this model
-		    	self.set("languageMap", languageMap);
-		    	self.set("modeLanguage", modeLanguage);
+		    	_this.set("languageMap", languageMap);
+		    	_this.set("modeLanguage", modeLanguage);
 		    });
 
 		    // Return the mode language
