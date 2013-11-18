@@ -9,11 +9,11 @@ define([
     'use strict';
 
     var AboutView = Backbone.View.extend({
-    	el: $('section.ll-content'),
+        el: $('section.ll-content'),
         template: JST['app/scripts/templates/about.ejs'],
         render: function() {
-        	this.$el.html(this.template());
-        	return this;
+            this.$el.html(this.template());
+            return this;
         }
     });
 
